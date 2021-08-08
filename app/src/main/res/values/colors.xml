@@ -10,4 +10,6 @@
     <color name="mainColor">#ED655D</color>
     <color name="appBackgroundColor">#FFEBEB</color>
     <color name="facilitiesBackgroundColor">#FFDADADA</color>
+    <color name="categoryBackgroundColor">#F1F3F5</color>
+    <color name="category">#DEE2E6</color>
 </resources>
