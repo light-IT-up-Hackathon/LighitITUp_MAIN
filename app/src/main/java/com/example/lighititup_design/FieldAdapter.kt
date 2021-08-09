@@ -1,11 +1,14 @@
 package com.example.lighititup_design
 
+import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import org.jetbrains.anko.startActivity
 import java.util.*
 
 class FieldAdapter(val locationList : ArrayList<LocationItem>): RecyclerView.Adapter<FieldAdapter.CustomViewHolder>() {
@@ -19,11 +22,8 @@ class FieldAdapter(val locationList : ArrayList<LocationItem>): RecyclerView.Ada
     override fun onBindViewHolder(holder: FieldAdapter.CustomViewHolder, position: Int) {
         holder.field.text = locationList.get(position).location
 
-        holder.itemView.setOnClickListener {
-
-        }
-
     }
+
     //리스트의 갯수를 적어준다
     override fun getItemCount(): Int {
         return locationList.size
