@@ -1,5 +1,6 @@
 package com.example.lighititup_design
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,11 @@ class FieldAdapter(val locationList : ArrayList<LocationItem>): RecyclerView.Ada
     //재활용해주는 곳 및 값을 넣어주는 곳
     override fun onBindViewHolder(holder: FieldAdapter.CustomViewHolder, position: Int) {
         holder.field.text = locationList.get(position).location
+
+        holder.itemView.setOnClickListener {
+
+        }
+
     }
     //리스트의 갯수를 적어준다
     override fun getItemCount(): Int {
